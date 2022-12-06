@@ -3,7 +3,7 @@ import ProfileImage from '../../../../components/ProfileImage'
 import Card from '../../../../components/ui/Card'
 import MyImage from '../../../../components/ui/MyImage'
 
-import heart from"../../../../assets/heart.png"
+import heart from"../../../../assets/img/heart.png"
 
 import "./postcard.css"
 import "../../../../styles/common.css"
