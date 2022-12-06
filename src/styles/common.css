@@ -1,3 +1,11 @@
+.main-background-color {
+  background-color: #f8f9fa;
+}
+
+.velog-background-color {
+  background-color: #20c997;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
