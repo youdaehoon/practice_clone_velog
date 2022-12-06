@@ -1,3 +1,40 @@
+
+/* .wrap:hover{
+    animation-duration: 1s;
+    animation-name:hoverin
+}
+@keyframes hoverin {
+    from{ transform: translate(0,0);}
+    to{transform: translate(0,-20px);}
+}
+@keyframes hoverout {
+    from{ transform: translate(0,-20px);}
+    to{transform: translate(0,0px);}
+} */
+.wrap-post-body{
+    margin: 1rem;
+    height: 8.3rem;
+    justify-content: space-between;
+}
 .title{
-    
+    font-size: 1rem;
+    margin: 0px 0px 0.25rem;
+}
+.desc{
+    font-size: 0.875rem;
+    margin: 0px 0px 0.75rem;
+}
+.post-info{
+    font-size: 0.75rem;
+}
+.footer{
+    padding: 1rem;
+    border-top: 1px solid #f1f3f5;
+    font-size: 0.75rem;
+}
+.gray{
+    color: #868e96;
+}
+.gap{
+    gap: 0.5rem;
 }
