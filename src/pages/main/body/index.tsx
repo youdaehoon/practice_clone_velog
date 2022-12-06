@@ -1,12 +1,12 @@
-import React from 'react'
-import PostSection from './postsection'
+import React from "react";
+import PostSection from "./postsection";
 
 const Body = () => {
   return (
     <div>
-        <PostSection/>
+      <PostSection />
     </div>
-  )
-}
+  );
+};
 
-export default Body
+export default Body;
