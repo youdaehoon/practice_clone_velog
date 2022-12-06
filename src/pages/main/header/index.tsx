@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import "../../styles/common.css";
-import "../../styles/header.css";
+import "../../styles/MainHeader.css";
 import { BsSun, BsMoon, BsSearch } from "react-icons/bs";
 import { GoTriangleDown } from "react-icons/go";
-import ProfileImage from "../ProfileImage";
-interface HeaderProps {
+import ProfileImage from "../../../components/ProfileImage";
+interface MainHeaderProps {
   darkMode: boolean;
   setDarkMode: any;
 }
 
-const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
+const MainHeader: React.FC<MainHeaderProps> = ({ darkMode, setDarkMode }) => {
   const [toggleBar, setToggleBar] = useState<boolean>(false);
 
   const toggleMode = (state: boolean, setFunc: any) => setFunc(!state);
 
   return (
     <div className=" flex justify-center align-center main-background-color">
-      <div className="header-wrap flex space-between align-center">
+      <div className="MainHeader-wrap flex space-between align-center">
         <div className="logo flex justify-center align-center"></div>
-
+        
         <div className="nav-wrap flex">
           {darkMode ? (
             <div
@@ -74,4 +74,4 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
   );
 };
 
-export default Header;
+export default MainHeader;
