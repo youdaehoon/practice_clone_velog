@@ -1,0 +1,15 @@
+.header-wrap {
+  border: 1px solid cyan;
+  height: 4rem;
+}
+
+.logo {
+  border: 1px solid red;
+  height: 100%;
+  width: 72px;
+  background: center no-repeat url("../assets/img/logo.png");
+}
+
+.nav-wrap {
+  gap: 20px;
+}
