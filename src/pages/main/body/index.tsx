@@ -1,7 +1,7 @@
 import React from "react";
 import PostSection from "./postsection";
 
-const Body = () => {
+const MainBody = () => {
   return (
     <div>
       <PostSection />
@@ -9,4 +9,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default MainBody;
