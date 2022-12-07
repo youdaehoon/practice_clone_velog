@@ -34,7 +34,7 @@ navigate("/detail")
         <div className='flex flex-column space-between'>
         <MyImage url={data.url} height={167.012}></MyImage>
         
-        <div onClick={handleClick} className='wrap-post-body flex flex-column space-between'>
+        <div onClick={handleClick} className='wrap-post-body flex flex-column space-between pointer'>
             <a>
                 <h4 className='title'>{data.title}</h4>
                 <p className='desc'>{data.content}</p>
