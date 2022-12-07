@@ -36,3 +36,6 @@ flex-direction: row;
 .pointer{
   cursor: pointer;
 }
+.border-box{
+  box-sizing: border-box;
+}

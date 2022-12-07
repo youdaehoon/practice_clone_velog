@@ -22,7 +22,7 @@ const Layout :React.FC<IProps> = ({children:c, padding:p,classNameArrCommon:ca})
         width:"100%"
     } 
   return (
-    <div className={className} style={style}>{c}</div>
+    <div className={className+" border-box"} style={style}>{c}</div>
   )
 }
 
