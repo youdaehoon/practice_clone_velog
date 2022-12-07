@@ -7,6 +7,7 @@ import heart from"../../../../assets/img/heart.png"
 
 import "./postcard.css"
 import "../../../../styles/common.css"
+import { useNavigate } from 'react-router-dom'
 
 interface Iprops{
 data:{
@@ -23,14 +24,17 @@ numLike:number
 }
 }
 const PostCard:React.FC<Iprops> = ({data:data}) => {
-       
+  const navigate=useNavigate();     
+  const handleClick=()=>{
+navigate("/detail")
+       }
   return (
     <div className=''>
         <Card width={20} height={23.5} borderRadius={4}>
         <div className='flex flex-column space-between'>
         <MyImage url={data.url} height={167.012}></MyImage>
         
-        <div className='wrap-post-body flex flex-column space-between'>
+        <div onClick={handleClick} className='wrap-post-body flex flex-column space-between'>
             <a>
                 <h4 className='title'>{data.title}</h4>
                 <p className='desc'>{data.content}</p>
