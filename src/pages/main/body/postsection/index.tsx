@@ -65,7 +65,7 @@ numLike:22
      
   
   return (
-    <div className='wrap flex flex-row wrap justify-center'>
+    <div className='wrap flex flex-row '>
       {datas.map((data,idx)=>
       <div className='margin1 wrapcard'key={"post/"+idx} >
         <PostCard data={data}  />
