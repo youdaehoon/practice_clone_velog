@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/common.css";
-import "../../styles/MainHeader.css";
+import "./index.css"
 import { BsSun, BsMoon, BsSearch } from "react-icons/bs";
 import { GoTriangleDown } from "react-icons/go";
 import ProfileImage from "../../../components/ProfileImage";
