@@ -7,7 +7,7 @@ import "../../../../styles/common.css"
 
 const PostSection : React.FC = () => {
   const datas=[
-    {
+    { 
       url:'https://velog.velcdn.com/images/ninto_2/post/e4eaa7ec-223f-4ada-be19-11dadf1d8d0f/image.gif',
       title:"✍커밋 컨벤션",
       content:`"커밋 메세지 쓸 때도 컨벤션이 존재했다고..?😨"`,
@@ -17,7 +17,7 @@ const PostSection : React.FC = () => {
           profile:"https://velog.velcdn.com/images/ninto_2/profile/803bef73-6b7d-4af8-8592-ee361c8b9e61/image.jpg",
           nick:"ninto_2"
   },
-  numLike:125
+  numLike:125 
   
   }
     ,
