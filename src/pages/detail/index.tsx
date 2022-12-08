@@ -1,12 +1,16 @@
 import React from 'react'
 import Layout from '../../components/ui/Layout'
 import TitleSection from './body/titlesection'
+import DetailHeader from './header/DetailHeader'
 
 const Detail:React.FC = () => {
   return (
-    <Layout>
-    <TitleSection></TitleSection>
-    </Layout>
+
+    <div>
+      <DetailHeader/>
+      <TitleSection></TitleSection>
+
+    </div>
   )
 }
 
