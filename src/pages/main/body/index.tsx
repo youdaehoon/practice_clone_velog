@@ -5,15 +5,10 @@ import PostSection from "./postsection";
 
 const MainBody = () => {
   return (
-    <Layout
-      padding={"0rem 5rem"}
-      classNameArrCommon={["main-background-color"]}
-    >
-      <>
-        <TapSection />
-        <PostSection />
-      </>
-    </Layout>
+    <>
+      <TapSection />
+      <PostSection />
+    </>
   );
 };
 

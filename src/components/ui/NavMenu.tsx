@@ -14,7 +14,7 @@ const NavMenu: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
   const toggleMode = (state: boolean, setFunc: any) => setFunc(!state);
 
   return (
-    <div className="nav-wrap flex">
+    <div className="nav-wrap flex align-center">
     {darkMode ? (
       <div
         className="nav-icon flex justify-center align-center"
