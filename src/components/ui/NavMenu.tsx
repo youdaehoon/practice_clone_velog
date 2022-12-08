@@ -4,12 +4,13 @@ import { GoTriangleDown } from "react-icons/go";
 import ProfileImage from "../ProfileImage";
 
 interface HeaderProps {
-  darkMode: boolean;
-  setDarkMode: any;
+ 
 }
 
-const NavMenu: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
+const NavMenu: React.FC<HeaderProps> = ({  }) => {
   const [toggleBar, setToggleBar] = useState<boolean>(false);
+  const darkMode=false;
+  const setDarkMode=""
 
   const toggleMode = (state: boolean, setFunc: any) => setFunc(!state);
 
