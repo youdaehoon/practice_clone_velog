@@ -1,0 +1,13 @@
+.tap-wrap {
+  margin-top: 2rem;
+  height: 2.5rem;
+  font-size: 1.125rem;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
