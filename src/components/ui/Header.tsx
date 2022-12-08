@@ -5,20 +5,16 @@ import "../../styles/common.css";
 
 interface IProps {
   children: React.ReactElement;
-  darkMode: boolean;
-  setDarkMode?: any;
 }
 
 const Header: React.FC<IProps> = ({
   children: c,
-  darkMode: dm,
-  setDarkMode: sdm,
 }) => {
   return (
-    <>
+    <header className="flex space-between align-center">
       {c}
-      <NavMenu darkMode={dm} setDarkMode={sdm} />
-    </>
+      <NavMenu  />
+    </header>
   );
 };
 
