@@ -6,21 +6,23 @@ import "./index.css";
 import "../../../../styles/common.css";
 import Test from "../../../../components/Test";
 
-const PostSection: React.FC = () => {
-  const datas = [
-    {
-      url: "https://velog.velcdn.com/images/ninto_2/post/e4eaa7ec-223f-4ada-be19-11dadf1d8d0f/image.gif",
-      title: "✍커밋 컨벤션",
-      content: `"커밋 메세지 쓸 때도 컨벤션이 존재했다고..?😨"`,
-      date: "2012년 11월 27일",
-      numReply: 4,
-      user: {
-        profile:
-          "https://velog.velcdn.com/images/ninto_2/profile/803bef73-6b7d-4af8-8592-ee361c8b9e61/image.jpg",
-        nick: "ninto_2",
-      },
-      numLike: 125,
-    },
+
+const PostSection : React.FC = () => {
+  const datas=[
+    { 
+      url:'https://velog.velcdn.com/images/ninto_2/post/e4eaa7ec-223f-4ada-be19-11dadf1d8d0f/image.gif',
+      title:"✍커밋 컨벤션",
+      content:`"커밋 메세지 쓸 때도 컨벤션이 존재했다고..?😨"`,
+      date:"2012년 11월 27일",
+      numReply:4,
+      user:{
+          profile:"https://velog.velcdn.com/images/ninto_2/profile/803bef73-6b7d-4af8-8592-ee361c8b9e61/image.jpg",
+          nick:"ninto_2"
+  },
+  numLike:125 
+  
+  }
+    ,
     {
       url: "https://velog.velcdn.com/images/wksmstkfka12/post/9208c4ad-3d6c-44e2-8a3b-9f42ce3b031d/image.png",
       title: "개발을 좋아한다는 것",

@@ -1,8 +1,14 @@
 import React from 'react'
+import TitleSection from './body/titlesection'
+import DetailHeader from './header/DetailHeader'
 
 const Detail:React.FC = () => {
   return (
-    <div>Detail</div>
+    <div>
+      <DetailHeader/>
+      <TitleSection></TitleSection>
+
+    </div>
   )
 }
 
