@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import NavMenu from "../../../components/ui/NavMenu";
+import Header from "../../../components/ui/Header";
+import Layout from "../../../components/ui/Layout";
+
 import "../../../styles/common.css";
 import HeaderLogo from "./HeaderLogo";
 import "./index.css";
-interface MainHeaderProps {
-  darkMode: boolean;
-  setDarkMode: any;
-}
 
-const MainHeader: React.FC<MainHeaderProps> = ({ darkMode, setDarkMode }) => {
+const MainHeader: React.FC = () => {
+  const [darkMode, setDarkMode] = useState<boolean>(true);
   return (
-    <div className=" flex space-between align-center main-background-color">
-      <HeaderLogo/>
-      <NavMenu darkMode={darkMode} setDarkMode={setDarkMode} />
-    </div>
+    <Layout padding={"0rem 5rem"}>
+      <header className=" flex space-between align-center main-background-color">
+        <Header darkMode={darkMode} setDarkMode={setDarkMode}>
+          <HeaderLogo />
+        </Header>
+      </header>
+    </Layout>
   );
 };
 
