@@ -1,8 +1,11 @@
 import React from 'react'
+import DetailHeader from './header/DetailHeader'
 
 const Detail:React.FC = () => {
   return (
-    <div>Detail</div>
+    <div>
+      <DetailHeader/>
+    </div>
   )
 }
 
