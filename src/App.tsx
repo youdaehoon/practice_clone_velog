@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Route, Routes, useLocation, useParams } from "react-router-dom";
-import MainHeader from "./pages/main/header";
 import Detail from "./pages/detail";
 import Main from "./pages/main";
 import Write from "./pages/write";
-import Header from "./components/ui/Header";
+
+import ReactGA from "react-ga4";
+import RouteChangeTracker from "./router";
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(true);
-  let { pathname } = useLocation();
+  RouteChangeTracker();
   return (
     <div className="app">
       <Routes>
