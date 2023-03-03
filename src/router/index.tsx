@@ -8,9 +8,8 @@ const RouteChangeTracker = () => {
   const TRACKING_ID = "G-NVP3112WGR";
   const [initialized, setInitialized] = React.useState(false);
   React.useEffect(() => {
-    if (!window.location.href.includes("localhost")) {
-      ReactGA.initialize(TRACKING_ID);
-    }
+    ReactGA.initialize(TRACKING_ID);
+
     setInitialized(true);
   }, []);
 
