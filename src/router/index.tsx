@@ -16,7 +16,11 @@ const RouteChangeTracker = () => {
 
   React.useEffect(() => {
     if (initialized) {
-      ReactGA.send(location.pathname + location.search);
+      ReactGA.send({
+        page: location.pathname,
+        hitType: "pagevuide",
+        title: "custom title",
+      });
     }
   }, [initialized, location]);
 };

@@ -4,7 +4,6 @@ import Detail from "./pages/detail";
 import Main from "./pages/main";
 import Write from "./pages/write";
 
-import ReactGA from "react-ga4";
 import RouteChangeTracker from "./router";
 
 const App: React.FC = () => {
