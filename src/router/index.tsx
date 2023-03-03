@@ -16,12 +16,23 @@ const RouteChangeTracker = () => {
 
   React.useEffect(() => {
     let page = location.pathname;
+    let title = "custom title";
+    switch (page) {
+      case "/":
+        title = "main";
+        break;
+      case "/detail":
+        title = "detail";
+        break;
+      default:
+        break;
+    }
     if (page === "/") page = "/main";
     if (initialized) {
       ReactGA.send({
         page: page,
         hitType: "pageview",
-        title: "custom title",
+        title: title,
       });
     }
   }, [initialized, location]);
