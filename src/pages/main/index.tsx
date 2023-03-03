@@ -6,7 +6,7 @@ import Layout from "../../components/ui/Layout";
 
 const Main: React.FC = () => {
   const select = useAppSelector(state => state.posts);
-  console.log(select);
+  // console.log(select);
   return (
     <Layout
       padding={"0rem 5rem"}

@@ -1,0 +1,15 @@
+.information{
+gap: 0.5rem;
+}
+.nick{
+color: #212529;
+font-weight: bold;
+}
+
+.date{
+color: #495057;
+width: max-content;
+}
+
+
+

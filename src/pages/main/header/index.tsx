@@ -7,10 +7,10 @@ import HeaderLogo from "./HeaderLogo";
 import "./index.css";
 
 const MainHeader: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(true);
+  
   return (
     <header className=" flex space-between align-center main-background-color">
-      <Header darkMode={darkMode} setDarkMode={setDarkMode}>
+      <Header >
         <HeaderLogo />
       </Header>
     </header>
