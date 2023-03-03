@@ -7,11 +7,6 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 
-import ReactGA from "react-ga4";
-
-const TRACKING_ID = "G-NVP3112WGR";
-ReactGA.initialize(TRACKING_ID);
-
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
