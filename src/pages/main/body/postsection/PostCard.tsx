@@ -27,7 +27,7 @@ interface Iprops {
 const PostCard: React.FC<Iprops> = ({ data: data }) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    AnaliticEvent("page_route", "detail");
+    AnaliticEvent("page_route", "test_detail");
     navigate("/detail");
   };
   return (
